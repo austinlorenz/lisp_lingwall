@@ -1,0 +1,52 @@
+Improvements:
+
+Diablo2 features:
+	Mercenaries of complementary classes (sidekick)
+	Gem / rune embedding system
+	Difficulty levels
+More towns
+More stores  
+Much greater weapon selection
+Addable limbs (cyborgs)
+Recall first town in monkey island 1
+Conversational ability
+Different scales for different sized monsters 
+Subquests and sidequests
+Story
+"Unbeatable" baddies, like ruby weapon and emerald weapon; beating them requires fluency in second language.
+Vim-like functionality: 
+	redo last action 
+	macros
+	modal interface - colon commands; "come tres fresas"
+	tab completion of commands (bad idea if we want players typing out Spanish)
+Arch linux like modularity
+Remove food requirement...or use it as vocabulary pump
+Selling of interesting items should be possible
+"Tutor" characters
+Small percentage of messages on sidebar will be in Spanish; percentage increases with level.
+
+General innovations:
+From Hacklike games: No need to carry spellbooks
+More recognition of demigod status - aura, low-level creatures fear, vaporization within ambit, changing appearance
+Extreme power curve
+Low level creatures struck dead by aura
+Borglike uniques
+
+New concepts:
+Tutor characters
+Vocabulary pumps
+The fewer the hours per day spent playing by the player, the more addictive the game becomes
+The less the player uses Spanish (spells, inventory), the greater the incentive to do so.
+	The fewer the (Spanish-requiring) spells cast by the player, the more creatures will appear which are vulnerable to magic, but resistant to physical damage.  The same can apply to specific items of grammar.  
+Supermemo algorithm to avoid overtaxing the player
+
+Story:
+You are a cyborg of extraordinary power.  Previous builds failed due to problems of identity...operating system design.  Fundamental idea: using first person singular + possessive exclusively in one's thoughts causes one to identify cybernetic bodyparts with one's self, with disastrous results.  Think Halo Mjolnir body armor, spiderman symbiote, robocop, spawn.
+
+Character classes could follow green berets.  Or character type could follow different special operations groups.
+Officer
+Grunt
+Communications
+Weapons specialist
+Demolitions
+Medic

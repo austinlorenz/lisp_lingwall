@@ -1,0 +1,39 @@
+A - INTRODUCTION
+
+The human brain is not well-adapted to controlling cybernetically-enhanced bodies.  When the cybersoldiers first appeared, they controlled their 'kit'--an internal network of bionic implants and prostheses--as one would control a bodypart.  Accidents were common, but accepted as a necessary risk--"for the greater good".  As the field of bionics developed, the power of cybersoldiers increased exponentially, but the human brain remained poorly-adapted to directly controlling military grade hardware.  The severity and frequency of accidents increased accordingly, until the USG cybersoldier selection and assessment trial of 2071, in which 53% of candidates were lost due to failure to maintain control of their kits.  Of the surviving graduating class of 24 cybersoldiers, 5 were decapitated in the graduation ceremony due to overly-emotional, bionically-enhanced farewell salutes to fallen comrades.  Several bystanders lost their lives to the flying armor-plated craniums.      
+
+In retrospect, the solution was obvious: a switch from analog to digital.  Second-generation cybersoldiers were required to control their kits via neuro-terminals, with commands entered by verbal thought, rather than by tactile feel.  Accidents were dramatically reduced, but not eliminated.  Occasionaly, one's thoughts would inadvertently mirror a command, as during the battle of 2121, in which a newly-minted cybersoldier, serving in the mountain division and half-frozen, thought "I'm going to turn up the heat," thereby triggering his kit's fireball attack and vaporizing the non-enhanced portion of his platoon.  Such incidents taught the military that the language a cybersoldier uses in everyday thought--its biolect--and the language it uses to control its kit--its cyberlect--must be distinct.  A cybersoldier must go through ardous training and construct a partition of its mind, one half running the biolect, one half running the cyberlect, such that both halves remain divided by a wall of language known as the lingwall.
+
+It was soon learned that cybernetic implants make soldiers much harder to kill, but much easier to control.  If a cybersoldier came to identify the hundreds of pieces of machinery running through its flesh as "I", then when some piece was hacked and compromised by a hostile force, the mind of the cybersoldier could be controlled.  One would as soon grant administrator privileges to every account on a network.  Again, the lingwall was the solution.  The commands used to control the kit cannot exclusively use "I", but will use a variable pronoun chosen by an AI known as the lingwall assistant.    
+
+You are a cybersoldier training in the harsh, partially terraformed wilderness of Mars, fresh out of passing the USG CSAA and preparing to enter the Lingwall Construction Course.  Late one night your encampment is stormed by a team of heavily-armored cyborgs.  Because you have not yet constructed your lingwalls, you and your fellow trainees are defenseless.  You are taken captive and drugged.  You wake up alone, somewhere in an ice mine.  Can you reach the surface, constructing your lingwall along the way, and find out who was behind the assault? 
+
+B - CONTROLS
+
+t - target
+g - get item
+i - inventory
+f - fire ranged weapon
+
+Movement keys are yuhjklbn.  jumping shift + direction key.  
+
+To enter a lingwall command, type ;.
+
+To enter an English command, type :.
+
+English commands:
+:q - quit
+:h - help
+:l - display current lesson
+:turn - display turn number
+:termless - shrink terminal by five characters
+:termless - enlarge terminal by five characters
+
+C - RACES
+
+Cybernetic implants multiply an organism's existing abilities, rather than replacing them.  Imagine a man with muscle wires running through his biological muscle fibers.  If the muscle wires contract too hard when stimulated, they will tear all of his tendons and ligaments.  The upper limit of a cyborg's enhanced abilities is imposed by its biology.  Hence to create a cyborg with super strength, genetically engineer a human-ape hybrid with 4x the strength of a man, then enhance him cybernetically.  Similarly, to create a cyborg with super speed and dexterity, start with a Troodon, rather than a man.  
+
+Human
+Sasquatch
+Troodon
+Wolf

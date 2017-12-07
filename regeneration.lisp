@@ -1,0 +1,12 @@
+(defparameter *regen* 0)
+(defparameter *regen-time* 10)
+
+(defun regenerate ()
+  (when (> (- *turn* *regen*) *regen-time*)
+    (cond ((< (player-energy *player*) (max_energy *player*)) (incf (player-energy *player*) 1)
+	                                                                (setf *regen* *turn*))
+          ((< (player-hitpoints *player*) (max_hitpoints *player*)) (incf (player-hitpoints *player*) 1)
+	                                                            (setf *regen* *turn*))
+    )
+  )
+)

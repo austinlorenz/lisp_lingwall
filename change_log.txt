@@ -1,0 +1,43 @@
+10-25
+    1. Added message for walking over objects; updates game_loop.fas, items.lisp.
+    2. Changed message to "you walk over a"; updates items.lisp.
+    3. Added trash talk: creatures have 20% chance of laughing at you when you miss them; updates game_loop.fas, monsters.fas, trash_talk.lisp.
+    4. Game now playable in French mode, except French lessons not completed; updates game_loop.fas, command_generator.lisp, french_trans.lisp, french_conjugations.lisp, french_lessons.lisp, spanish_trans.lisp, spanish_conjugations.lisp, spanish_lessons.lisp
+
+10-26
+    1. Added cause of death to death screen; updates death_screen.lisp, hydration.lisp, satiation.lisp, status_conditions.lisp, update_creatures.fas
+    2. Completed French lessons; updates french_lessons.lisp
+    3. Fixed French grammatical errors; updates french_conjugations.lisp, french_trans.lisp
+
+10-27
+    1. Increased ammo from 10 to 30, made new file for items; updates init_monsters.lisp, init_items.lisp, game_loop.fas
+    2. Now cyborgs drop batteries when killed; updates monsters.fas, init_monsters.lisp, init_items.lisp, items.lisp
+    3. Errors cost a random number capped by player level; updates game_loop.fas, io_functions.fas, L2-error.lisp 
+
+10-29
+    1. Generalized items, added mushrooms as food item, reduced satiation of roots to 100; updates init_items.lisp, items.lisp
+    2. Fixed troodon jump bug; updates player_movement.fas
+
+10-30
+    1. Added number of turns and commands per turn to death screen; updates death_screen.lisp
+    2. Added reroll screen; updates make_hero.lisp
+    3. Added ability to start over to reroll screen; updates make_hero.lisp
+    4. Races now modify stats--Sasquatch strongest and toughest, least dextrous, Troodon opposite, Wolf and Human between; updates make_hero.lisp
+    5. Only French and Spanish can be chosen as cyberlect; updates choose_language.lisp
+    6. Removed esperanto from current version; updates esperanto_conjugations.lisp, game_loop.fas
+    7. Changed inventory interface towards being able to change weapons/armor; updates show_inventory.lisp, io_functions.fas
+    8. Fixed bug that increased sasquatch jump cost with every roll; updates make_hero.lisp
+
+10-31
+    1. Changed title screen to Lingwall; updates game_init.lisp, draw_title.lisp, draw_wolf.lisp, game_loop.fas 
+    2. Added new melee weapon stick; updates weapons.lisp
+    3. Generalized and simplified object creation; updates init_items.lisp, items.lisp, level_maker.lisp, monsters.fas, game_parameters.lisp
+    4. Added new melee weapon plasma sword; updates weapons.lisp
+
+11-1
+    1. Unrecognized :commands now result in "Command not recognized."; updates io_functions.fas
+    2. Unrecognized :commands no longer cause turn loss; updates io_functions.fas
+    3. Changed phrase color to white; updates display_functions.fas
+    4. Fixed "a ammo"; updates weapons.lisp, armor.lisp, items.lisp
+    5. Buffed item generation from 15 to 25; updates level_maker.lisp
+    6. Game now pauses for 1 second after player death; updates game_loop.fas

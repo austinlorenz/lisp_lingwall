@@ -1,0 +1,18 @@
+First import combat system from orc_battle, and call when adjacent to monster.
+
+Hominids:
+
+Penalties:
+1) Backing straight up
+2) Moving straight into missile fire
+3) Being surrounded
+4) Being cornered
+5) Being against a wall
+
+Bonuses:
+
+
+Quadrupeds:
+Poor lateral movement
+Excellent linear movement
+Forward charge

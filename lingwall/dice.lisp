@@ -1,0 +1,5 @@
+(defun roll_dice (num_dice num_sides)
+  (let ((x 0))
+    (loop repeat num_dice do (setf x (+ x (1+ (random num_sides))))) 
+    x)
+)

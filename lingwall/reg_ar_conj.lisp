@@ -1,0 +1,8 @@
+(defun reg-ar-conj (stem pronoun)
+	(cond ((equal pronoun "yo") (concatenate 'string stem "o"))
+	      ((or (equal pronoun "usted") (equal pronoun "ella") (equal pronoun "el")) (concatenate 'string stem "a"))
+	      ((equal pronoun "tu") (concatenate 'string stem "as"))
+	      ((equal pronoun "nosotros") (concatenate 'string stem "amos"))
+	      ((equal pronoun "ellos") (concatenate 'string stem "an"))
+	)
+)

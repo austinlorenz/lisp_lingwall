@@ -1,0 +1,17 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 17 (DEFUN CHOOSE_LANGUAGE NIL ...)-1|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|CHOOSE_LANGUAGE| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|CHOOSE_LANGUAGE|
+       #79Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 98 DC
+            38 01 31 90 38 01 31 98 DD 38 01 31 90 38 01 31 98 2E 04 14 AC DF
+            8E 14 16 AC E2 8E 14 16 2E 00 28 52 16 01 E4 38 01 31 90 38 01 31
+            98 19 01 CB 0F 07 1B 6E CE 0F 07 1B 69)
+       (|COMMON-LISP-USER|::|CLS|
+        "Please select a cyberlect in which to construct your lingwall."
+        "[1] French" "[2] Spanish" |COMMON-LISP-USER|::|READ_INPUT| (#\1)
+        "French" |COMMON-LISP-USER|::|*L2*| (#\2) "Spanish" "Loading...")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))

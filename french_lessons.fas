@@ -1,0 +1,187 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 14 (DEFUN LANGUAGE_LESSON (L) ...)-1|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LANGUAGE_LESSON| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LANGUAGE_LESSON|
+       #107Y(00 00 00 00 01 00 00 00 26 02 AD 8F AD 39 DB AE 90 01 2F 37 DD AE
+             90 01 2F 35 DF AE 90 01 2F 33 E1 AE 90 01 2F 31 E3 AE 90 01 2F 2F
+             E5 AE 90 01 2F 2D E7 AE 90 01 2F 2B E9 AE 90 01 2F 29 EB AE 33 01
+             2F 2E 12 19 02 2E 00 19 02 2E 02 19 02 2E 04 19 02 2E 06 19 02 2E
+             08 19 02 2E 0A 19 02 2E 0C 19 02 2E 0E 19 02 2E 10 19 02)
+       (|COMMON-LISP-USER|::|LESSON_ONE| 1. |COMMON-LISP-USER|::|LESSON_TWO| 2.
+        |COMMON-LISP-USER|::|LESSON_THREE| 3. |COMMON-LISP-USER|::|LESSON_FOUR|
+        4. |COMMON-LISP-USER|::|LESSON_FIVE| 5.
+        |COMMON-LISP-USER|::|LESSON_SIX| 6. |COMMON-LISP-USER|::|LESSON_SEVEN|
+        7. |COMMON-LISP-USER|::|LESSON_EIGHT| 8.
+        |COMMON-LISP-USER|::|LESSON_NINE| 9. |COMMON-LISP-USER|::|LESSON_TEN|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP-USER|::|L|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|16 32 (DEFUN LESSON_ONE NIL ...)-2|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_ONE| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_ONE|
+       #80Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 38 01 31 98 DE
+            38 01 31 90 38 01 31 98 DF 38 01 31 90 38 01 31 98 E0 38 01 31 90
+            38 01 31 98 E1 38 01 31 90 E2 2F 09 19 01)
+       (|COMMON-LISP-USER|::|CLS|
+        "You are authorized to use the following commands: "
+        "Teleport: je vais" "Fireball: je fais un feu" "Eat: je mange"
+        "Drink: je bois" "Heal: je suis en bonne sante" "Use: je utilise" 0.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|34 40 (DEFUN LESSON_TWO NIL ...)-3|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_TWO| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_TWO|
+       #35Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 DD 2F 04 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 1 vocabulary: "
+        "a fireball: une boule de feu" 1. |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|42 50 (DEFUN LESSON_THREE NIL ...)-4|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_THREE| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_THREE|
+       #44Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 DE 2F 05 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 2 vocabulary: " "the fire: le feu"
+        "the fireball: la boule de feu" 2. |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|52 60 (DEFUN LESSON_FOUR NIL ...)-5|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_FOUR| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_FOUR|
+       #44Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 DE 2F 05 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 3 vocabulary: " "this fire: ce feu"
+        "this fireball: cette boule de feu" 3.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|62 78 (DEFUN LESSON_FIVE NIL ...)-6|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_FIVE| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_FIVE|
+       #80Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 38 01 31 98 DE
+            38 01 31 90 38 01 31 98 DF 38 01 31 90 38 01 31 98 E0 38 01 31 90
+            38 01 31 98 E1 38 01 31 90 E2 2F 09 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 4 vocabulary: "
+        "we (m) / we (f) make: nous faisons" "we (m) / we (f) go: nous allons"
+        "we (m) / we (f) eat: nous mangeons"
+        "we (m) / we (f) drink: nous buvons"
+        "we (m) / we (f) are well: nous sommes en bonne sante"
+        "we (m) / we (f) use: nous utilisons" 4.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|80 88 (DEFUN LESSON_SIX NIL ...)-7|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_SIX| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_SIX|
+       #44Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 DE 2F 05 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 5 vocabulary: " "that fire: ce feu"
+        "that fireball: cette boule de feu" 5.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|90 106 (DEFUN LESSON_SEVEN NIL ...)-8|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_SEVEN| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_SEVEN|
+       #80Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 38 01 31 98 DE
+            38 01 31 90 38 01 31 98 DF 38 01 31 90 38 01 31 98 E0 38 01 31 90
+            38 01 31 98 E1 38 01 31 90 E2 2F 09 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 6 vocabulary: "
+        "he / she makes: il / elle fait" "he / she goes: il / elle va"
+        "he / she eats: il / elle mange" "he / she drinks: il / elle boit"
+        "he / she is well: il / elle est en bonne sante"
+        "he / she uses: il / elle utilise" 6.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|108 122 (DEFUN LESSON_EIGHT NIL ...)-9|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_EIGHT| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_EIGHT|
+       #71Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 38 01 31 98 DE
+            38 01 31 90 38 01 31 98 DF 38 01 31 90 38 01 31 98 E0 38 01 31 90
+            E1 2F 08 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 7 vocabulary: "
+        "they (m) / they (f) make: ils / elles font"
+        "they (m) / they (f) go: ils / elles vont"
+        "they (m) / they (f) eat: ils / elles mangent"
+        "they (m) / they (f) drink: ils / elles boivent"
+        "they (m) / they (f) are: ils / elles sont" 7.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|124 140 (DEFUN LESSON_NINE NIL ...)-10|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_NINE| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_NINE|
+       #80Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 38 01 31 98 DE
+            38 01 31 90 38 01 31 98 DF 38 01 31 90 38 01 31 98 E0 38 01 31 90
+            38 01 31 98 E1 38 01 31 90 E2 2F 09 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 8 vocabulary: "
+        "you (informal) / you (formal) make: tu fais / vous faites"
+        "you (informal) / you (formal) go: tu vas / vous allez"
+        "you (informal) / you (formal) eat: tu manges / vous mangez"
+        "you (informal) / you (formal) drink: tu bois / vous buvez"
+        "you (informal) / you (formal) are: tu es / vous etes"
+        "you (informal) / you (formal) use: tu utilises / vous utilisez" 8.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|142 158 (DEFUN LESSON_TEN NIL ...)-11|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_TEN| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_TEN|
+       #80Y(00 00 00 00 00 00 00 00 26 01 2E 00 DB 38 01 31 90 38 01 31 97 38
+            01 31 97 DC 38 01 31 90 38 01 31 98 DD 38 01 31 90 38 01 31 98 DE
+            38 01 31 90 38 01 31 98 DF 38 01 31 90 38 01 31 98 E0 38 01 31 90
+            38 01 31 98 E1 38 01 31 90 E2 2F 09 19 01)
+       (|COMMON-LISP-USER|::|CLS| "Level 9 vocabulary: " "the fires: les feux"
+        "the fireballs: las boules de feu" "some fires: des feux"
+        "some fireballs: des boules de feu" "these  those fires: ces feux"
+        "these  those fireballs: ces boules de feu" 9.
+        |COMMON-LISP-USER|::|LESSON_INPUT|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|160 173 (DEFUN LESSON_INPUT (N) ...)-12|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|LESSON_INPUT| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|LESSON_INPUT|
+       #104Y(00 00 00 00 01 00 00 00 26 02 38 01 31 97 38 01 31 97 AD 8F AD 05
+             DA 38 01 31 90 6B 01 6F 02 AE 91 01 32 05 DD 38 01 31 90 DE 38 01
+             31 90 2E 05 14 AC E0 8E 14 20 AC E2 8F 14 09 6B 01 6F 02 AF 90 01
+             32 17 AC E3 8E 14 17 AC E4 8E 14 12 2E 0C 9F 14 2F 07 19 03 AE 32
+             B2 1B 76 AE 32 B1 1B 71 2E 0B 38 01 31 98 19 03)
+       ("[p]revious, " |COMMON-LISP-USER|::|*PLAYER*|
+        |COMMON-LISP-USER|::|PLAYER-LEVEL| "[n]ext, " "Spacebar to continue."
+        |COMMON-LISP-USER|::|READ_INPUT| (#\p)
+        |COMMON-LISP-USER|::|LANGUAGE_LESSON| (#\n) (#\Space) (#\Escape)
+        |COMMON-LISP-USER|::|DRAW_WORLD| |COMMON-LISP-USER|::|CLS|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP-USER|::|N|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))

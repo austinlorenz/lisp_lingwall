@@ -1,0 +1,107 @@
+(defun blda (p q eps n l) 
+    (cond ((= n 0) (reverse l))
+	  ((< (+ eps p) q) (push 0 l) (blda p q (+ eps p) (1- n) l)) 
+	  (t (push 1 l)  (blda p q (+ (- eps q) p) (1- n) l))
+    )
+)
+
+(defun quadrant (a b x y)
+    (cond ((= x a) 0)
+	  ((and (> x a) (>= y b)) 1)
+	  ((and (< x a) (>= y b)) 2)
+	  ((and (< x a) (<= y b)) 3)
+	  ((and (> x a) (<= y b)) 4)
+    )
+)
+
+(defun slope_numerator (a b x y) 
+    (abs (- b y))
+)
+
+(defun slope_denominator (a b x y) 
+    (abs (- a x))
+)
+
+(defun slope (a b x y)
+    (if (= a x) nil (/ (slope_numerator a b x y) (slope_denominator a b x y)))
+)
+
+(defun is_simple_line (a b x y)
+    (or
+	(= a x)
+	(= b y)
+	(= (abs (slope a b x y)) 1)
+    )
+)
+
+
+(defun simple_line (a b x y)
+    (cond ((= a x) (cond ((< b y) (loop for n from 1 to (abs (- b y)) collect '(0 1)))
+		         ((> b y) (loop for n from 1 to (abs (- b y)) collect '(0 -1)))
+		   )
+	  )
+          ((= b y) (cond ((< a x) (loop for n from 1 to (abs (- a x)) collect '(1 0)))
+			 ((> a x) (loop for n from 1 to (abs (- a x)) collect '(-1 0)))
+		   )
+	  )
+	  ((= (slope a b x y) 1) (cond ((< a x) (loop for n from 1 to (abs (- b y)) collect '(1 1)))
+		                       ((> a x) (loop for n from 1 to (abs (- b y)) collect '(-1 -1)))
+				 )
+	  )
+	  ((= (slope a b x y) -1) (cond ((< a x) (loop for n from 1 to (abs (- b y)) collect '(1 -1)))
+		                        ((> a x) (loop for n from 1 to (abs (- b y)) collect '(-1 1)))
+				 )
+	  )
+    )
+)
+
+(defun line_string (a b x y)
+    (blda (slope_numerator  a b x y) (slope_denominator a b x y) 0 (euclidean_distance a b x y) ())
+)
+
+;;x Goal 1: modify to handle vertical case separately.  Call this quadrant 0.
+;; Goal 2: generalize so as not to include *player-x* *player-y* 
+(defun line_coordinates (a b x y)
+  (cond ((is_simple_line a b x y) (simple_line a b x y))
+	((= (quadrant a b x y) 0) (mapcar (lambda (z) (if (equal z 1) '(0 1) '(0 1))) (line_string a b x y)))
+	((= (quadrant a b x y) 1) (mapcar (lambda (z) (if (equal z 1) '(1 1) '(1 0))) (line_string a b x y)))
+	((= (quadrant a b x y) 2) (mapcar (lambda (z) (if (equal z 1) '(-1 1) '(-1 0))) (line_string a b x y)))
+	((= (quadrant a b x y) 3) (mapcar (lambda (z) (if (equal z 1) '(-1 -1) '(-1 0))) (line_string a b x y)))
+	((= (quadrant a b x y) 4) (mapcar (lambda (z) (if (equal z 1) '(1 -1) '(1 0))) (line_string a b x y)))
+  )
+)
+
+(defun coordinate_list (a b x y)
+    (let ((l (cons (cons a (cons b ())) (line_coordinates a b x y))))  
+	(loop for n from 1 to (length l)
+	collect (sub_sum 0 n l))
+    )
+)
+
+(defun sub_sum (a b l)
+    (reduce #'pairwise_addition (subseq l a b))
+)
+
+(defun pairwise_addition (a b)
+    (cons (+ (first a) (first b)) (cons (+ (second a) (second b)) ()))
+)
+
+(defun in_line_of_sight (a b x y) 
+	(when (< (euclidean_distance a b x y) 7)
+	  (or
+	    (every (lambda (z) (is_floor (first z) (second z))) (interior (coordinate_list a b x y)))
+	    (every (lambda (z) (is_floor (first z) (second z))) (interior (coordinate_list x y a b)))
+	  )
+	)
+)
+
+(defun is_line (x y)
+    ;;(some (lambda (z) (and (equal (first z) x) (equal (second z) y))) 
+	;;(coordinate_list *player-x* *player-y* (car (rand_accessible)) (second (rand_accessible)))  
+    ;;)
+nil
+)
+
+(defun interior (l)
+    (cdr (set-difference l (last l)))
+)

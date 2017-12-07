@@ -1,0 +1,14 @@
+def player_level (experience):
+    max(0, math.floor(log(experience, 2) - 4))
+
+def level_up (PLAYER):
+    msg("You level up!")
+    PLAYER.constitution+=1
+    r=random.choice("PLAYER.strength+=1","PLAYER.dexterity+=1","PLAYER.constitution+=1") 
+    eval(r)
+    msg(":l to see your current language lesson.")
+
+def update_player_level (PLAYER):
+    if player_level(PLAYER.exp) > PLAYER.level:
+	PLAYER.level+=1
+	level_up()

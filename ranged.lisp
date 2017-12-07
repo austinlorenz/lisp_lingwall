@@ -1,0 +1,11 @@
+(defparameter *ammo* 0)
+
+(defun fire_ranged_weapon ()
+    (setf *target-mode* nil)
+    (cond ((not (player-ranged_weapon *player*)) (message "You have no ranged weapon."))
+	  ((= *ammo* 0) (message "Out of ammo."))
+          ((not (visible_creatures)) (message "No available target."))
+	  ((or (not *target*) (creature-dead *target*)) (setf *target* (nearest_creature)) (fire_ranged_weapon)) 
+	  (t (decf *ammo* 1) (creature-hit *target* (to_damage_ranged *player*) 'ranged))
+    )
+)

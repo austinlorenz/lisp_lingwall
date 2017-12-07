@@ -1,0 +1,5 @@
+(defun pause (n)
+	(let ((ti (get-internal-real-time)))
+	    (loop until (> (- (get-internal-real-time) ti) n))
+	)
+)

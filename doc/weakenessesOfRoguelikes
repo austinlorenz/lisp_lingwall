@@ -1,0 +1,23 @@
+ADOM:
+Escape key doesn't work
+No "fire at closest target" button
+Annoying message buffer
+1) Typing : doesn't show up on screen when typing :m
+2) You have to press space to move on to next message, but pressing it again yields an unknown command
+3) Messages disappear instantly if you're moving, which is almost always
+Ridiculous start difficulty
+Lack of roguelike direction keys
+'g' doesn't get
+Picking up item when slot is empty doesn't autoequip, I guess due to cursed items, which themselves are a stupid idea 
+Doesn't auto-pickup items you already possess
+No subwindows
+Doesn't open doors automatically
+
+Angband:
+Boring: Lack of story, subquests, classes, and level map of ADOM
+Picking up item when slot is empty doesn't autoequip
+
+Crawl:
+You have to memorize indices of your inventory to do anything.
+
+Combine interface quality of Angband with flavor of ADOM; add vim-like functionality.

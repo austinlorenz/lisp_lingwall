@@ -1,0 +1,12 @@
+(defparameter *player-inventory* nil)
+
+(defun pick_up_object ()
+ (if (>= (length *player-inventory*) 26) (message "Your inventory is full.")
+     (progn (let ((x (get_object_at_position *player-x* *player-y* *objects*)))
+	     (push x *player-inventory*)
+	     (setf *objects* (remove x *objects*))
+	     (message (concatenate 'string "You pick up a " (object-type x) ".")) 
+	    )
+     )
+ )
+)

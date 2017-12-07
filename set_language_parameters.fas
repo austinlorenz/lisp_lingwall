@@ -1,0 +1,58 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 1 (DEFPARAMETER *L1-PRONOUNS* '("I"))-1|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 31 62 DB DC 31 5A C6 19 01)
+   ((|COMMON-LISP|::|SPECIAL| |COMMON-LISP-USER|::|*L1-PRONOUNS*|)
+    |COMMON-LISP-USER|::|*L1-PRONOUNS*| ("I"))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|2 2 (DEFPARAMETER *L1-PRONOUN* NIL)-2|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 31 62 DB 63 31 5A C6 19 01)
+   ((|COMMON-LISP|::|SPECIAL| |COMMON-LISP-USER|::|*L1-PRONOUN*|)
+    |COMMON-LISP-USER|::|*L1-PRONOUN*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|3 3 (DEFPARAMETER *L2-PRONOUN* NIL)-3|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 31 62 DB 63 31 5A C6 19 01)
+   ((|COMMON-LISP|::|SPECIAL| |COMMON-LISP-USER|::|*L2-PRONOUN*|)
+    |COMMON-LISP-USER|::|*L2-PRONOUN*|)
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|4 4 (DEFPARAMETER *L2* "Spanish")-4|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 31 62 DB DC 31 5A C6 19 01)
+   ((|COMMON-LISP|::|SPECIAL| |COMMON-LISP-USER|::|*L2*|)
+    |COMMON-LISP-USER|::|*L2*| "Spanish")
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|6 76 (DEFUN SET-PRONOUN NIL ...)-5|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|SET-PRONOUN| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|SET-PRONOUN|
+       #453Y(00 00 00 00 00 00 00 00 26 01 6B 00 72 62 38 01 72 F7 6B 00 31 A1
+             0F 01 6B 02 DD 8F 14 80 EA 6B 01 DE 8E 14 80 44 6B 01 E1 8E 14 80
+             43 6B 01 E3 8E 14 80 4B 6B 01 EA 8E 14 80 5E 6B 01 EC 8E 14 80 5D
+             6B 01 EE 8E 14 80 66 6B 01 F1 8F 14 80 B9 E8 38 01 72 F7 AC 8E AC
+             80 69 AC E6 91 01 2F 80 A6 03 19 0F 06 16 01 1B 80 9F CA 0F 06 1B
+             80 99 CD 0F 06 1B 80 93 D0 1B 6A D2 1B 67 D4 1B 64 E4 38 01 72 F7
+             AC 8E AC 6E AC E6 90 01 2F 6B AC E8 90 01 2F 68 16 01 1B 80 70 D6
+             0F 06 1B 80 6A D8 0F 06 1B 80 64 03 15 1B FF B9 03 16 1B FF B4 E8
+             38 01 72 F7 AC 8E AC 6D AC E6 90 01 2F 6C 16 01 1B 80 46 03 18 1B
+             FF 9B 03 1C 0F 06 1B 80 B1 03 1E 0F 06 1B 80 AA 03 20 1B 80 72 03
+             21 1B 80 6D E8 38 01 72 F7 AC 8E AC 6D AC E6 90 01 2F 6C 16 01 1B
+             80 8C 03 23 0F 06 1B 80 85 03 25 0F 06 1B 80 7E 03 27 1B 80 46 16
+             01 6B 02 F4 8F 14 80 70 6B 01 F5 8E 14 FF B1 6B 01 F7 8E 14 FF B1
+             6B 01 65 1F 8E 14 FF BA 6B 01 65 22 8E 14 47 6B 01 65 24 8E 14 47
+             6B 01 65 26 8F 14 3A E8 38 01 72 F7 AC 8E AC FF BD AC E6 91 01 2F
+             08 03 28 0F 06 16 01 1B 2D 16 01 1B 29 03 2D 1B 80 60 03 2F 1B 80
+             5B 03 31 1B 80 56 03 33 1B 80 51 03 35 1B 80 4C 03 37 1B 80 47 6B
+             01 65 29 8F 14 04 03 2A 0F 06 6B 02 65 2B 32 14 1F 3B 6B 01 65 2C
+             8E 14 48 6B 01 65 2E 8E 14 46 6B 01 65 30 8E 14 44 6B 01 65 32 8E
+             14 42 6B 01 65 34 8E 14 40 6B 01 65 36 8E 14 FF BD 6B 01 65 38 8F
+             14 06 03 39 0F 06 19 01 00 19 01 19 01)
+       (|COMMON-LISP-USER|::|*L1-PRONOUNS*| |COMMON-LISP-USER|::|*L1-PRONOUN*|
+        |COMMON-LISP-USER|::|*L2*| "Spanish" "infinitive" "infinitive"
+        |COMMON-LISP-USER|::|*L2-PRONOUN*| "I" "yo" "you" 3. "tu" 1. "usted" 2.
+        "ustedes" "he" "el" "she" "ella" "they" "ellos" "ellas" "we" "nosotros"
+        "nosotras" "French" "infinitive" "infinitive" "I" "je" "you" "tu"
+        "vous" "he" "il" "she" "elle" "they" "ils" "elles" "we" "nous"
+        "Esperanto" "infinitive" "infinitive" "I" "mi" "you" "vi" "he" "li"
+        "she" "sxi" "they" "ili" "we" "ni")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))

@@ -1,0 +1,422 @@
+0. Misc
+x a) intro screen
+x b) choose character screen
+c) write story
+    1) Game occurs on Mars; hence caverns (make them red, or color appropriate to Martian geography.
+    2) Include Martians, the cavern carvers.  Remnants of an ancient, god-like race.  Capture the feeling of "The Dig".
+    3) Need for Lingwall could have something to do with Martians.
+    4) Partially terraformed, and therefore still very harsh--explains need for bioengineering
+x d) make title
+
+x 1. Make rectangular room with character symbol movable by arrow keys.
+
+x 2.  Place character information in a sequence of lines on the left of the screen, as in Angband. 
+x a) Advance each line by ten spaces. 
+
+x 3.  Improve formating
+x a) Change color of sidebar, protagonist, and walls, as in Angband.
+x b) Clear previous text on each turn
+x c) Remove cursor blink - idea: form strings first, then print, instead of printing char by char.  This will also be a cleaner way of dealing with sidebar. (worked, but is more difficult with color--final solution will depend on map and drawing large uniform areas as one string)
+
+x 4.  Make a large dungeon map which can be navigated by protagonist.
+x a) Fix visibility.
+   x 1) Problem: we have associated visibility with printability.  Then when tiles are not visible, they aren't printed, which ruins formatting of visible tiles.  Map needs to be based on a data structure--probably a list of tiles--with visibility determined by player's position in list.
+   x 2) Problem: cursor blink.
+x b) Hard code a large map.
+    x 1) Use blank-status and blank-tile.
+    x 2) Code functions for room-making.
+    x 3) Make several rooms.
+    x 4) Connect rooms by tunnels.
+    x 5) Define notion of distance from player.
+    x 6) Make off-screen rooms using this distance.
+    x 7) Connect by tunnels.
+    x 8) Make screen follow @.
+
+x 4.5. Subproject: Make mini-game with map containing random rooms, each having random monsters which can kill and be killed, with ability to ascend and descend stairs, with no screen flicker, and with a big boss at the end.
+x a) generalize rats
+    x 1) Make it so that we can change *rat-maximum* to place random rats in rooms.
+x b) generalize rooms and tunnels
+    x 1) Make it so that we can add new rectangular rooms by simply defining a new parameter.
+    x 2) Make it so that these rooms can be automatically connected by tunnels. 
+    x 3) Replace slots for door1-x etc. with a list of door coordinates.
+    x 4) Make it so that room number, room size, tunnel number, and tunnel length are random.
+    x 5) Make it so that rooms appear in a zig zag, vertically aligned then horizontally aligned, with tunnels between them.
+    x 6) Place staircase one per level.
+    x 7) Make it so that tunnel maker is general enough for both vertically and horizontally aligned rooms.
+x c) make basic combat system
+    x 1) Make it so that you must move into rat to hit it, rather than simply being adjacent.
+    x 2) Make it so that rats will bite you whenever you are adjacent.
+x d) Remove screen flicker
+    x 1) Guess: string concatenation is slow part of algorithm.  Try list consing instead. 
+x e) Make big boss at level 0 who guards exit.
+  x 1) Guard dog, but with 500 hp.
+x f) fix issue that trapped rats freeze game.
+x g) Remove dead rats from creature list
+x h) Check for accessibility before following player.
+x i) Add conditions for equality to monster following algorithm
+x j) Add defense (armor class) values, to hit values, x damage values - "three variable combat system" 
+	x 1) For player attacking monsters
+	x 2) For monsters attacking player
+x k) Make the game difficult by adding spell points and checking whether there are enough to cast.
+x l) Replace player position with current conjugation pronoun, which changes randomly.
+x m) Dramatically simplify and generalize.
+x n) Fix bugs.
+x o) Line of sight code.
+x p) Weapons.
+   x 1) Sword
+x q) Add win condition.
+x r) Make chosen race affect stats significantly.
+    x 1) Make choosing race screen offer different options, using interface code.
+    x 2) Copy stats from other for now (used angband instead).
+       x a) Human - Human
+       x b) Sasquatch - Troll
+       x c) Wolf - Orc
+       x d) Troodon - Drakeling
+x s) Make items usable.
+x t) Enforce max hitpoints / spellpoints
+x u) Low hitpoint warning
+x v) Fix bugs.
+	x 1) When hitpoints and max hitpoints exceed sum of 6 digits, display is pushed over on that line
+	x 2) Interface lists have wrong letters next to items
+	x 3) Dead animals can be killed by fuego attack.
+	x 4) No message is diplayed when player misses.
+x w) Enforce stat minimums.
+x x) SP should increase with level.
+x y) Rename items/monsters for flavor.
+    x 1) Potions of SP - batteries.  Implies adding "usar" command, which implies adding water, which implies adding hydration.
+    x 2) Bananas - roots / mushrooms.
+x z) Add armor.
+
+4.6) Improve mini-game dramatically.
+      x a) Make game_loop, rather than zsh, load the appropriate files.
+      x b) Write better message passing routine -- necessary for combat.
+        c) Further improve message passing routine.
+      x d) Add verb "sanar"
+      x	e) Use food for satiation rather than healing
+	      x 1) Add satiation routine
+	      x	2) Copy all values from adom
+      x f) Use < rather than > for stairs
+	g) Add digging - excavar
+      x	h) Death screen like adom
+	i) "donde esta la salida" and "donde hay una salida"
+      x j) Leveling up takes way too long.
+      x k) Enforce max number of items.
+	l) Enforce max item weight.
+      x	m) Make cyborgs "obsolete cyborgs" which overheat and shutdown, so they are beatable
+	n) Add heat management as in mechwarrior
+      x	o) Add lesson screen for when maps are loading
+      x	p) After completing the above for Spanish, do so for French.
+      x	q) Add reroll screen.
+	r) "Sanar" should heal percentage of hitpoints, but cost more for more hitpoints
+      x s) Jumping should cost energy.
+      x	t) Buff rats.  Poison damage.
+	u) Wolves hit and move.  Then rats, cyborgs and wolves are all different.
+	v) All cyborgs regenerate hitpoints (player and monsters).
+	w) Drink to cure poison.
+	x) Drop / unequip weapons and armor.
+      x y) Fireball should become more powerful with level.
+      x z) Regenerate spellpoints.
+
+4.7) Improve α drastically.
+	a) Color and number via antivenom and color coded toxins.
+	b) Ability to add new commands upon leveling.
+	c) Grouping of commands by theme.
+	d) Use polynomial formula for leveling similar to Angband's.
+	e) Add code for "fleeing in terror" -- then add feigned retreat to cyborgs.
+	f) Add emergent pack hunting behavior to wolf AI.  Wolves should attempt to surround when together, retreat when alone.
+	g) Add strike while moving to certain creatures. 
+	h) Add function move_away
+	i) Intelligent creatures should patrol, rather than jitter randomly.
+	j) Intelligent creatures should chase you after they see you, even after you've escaped.
+	k) Jump length should differ for different monsters.
+        x l) Troodon jumps for free.
+	x m) Creatures should be kept track of in array for is_accessible and line of sight.
+	n) Sentirse mejor - heal more hitpoints than estar bien.
+      x	o) Status effects - use funcall or eval.  Hunger, thirst, and poison statuses.
+	p) Ser duro - temporary boost to AC.
+	q) Character information screen.
+	r) Add five melee weapons.
+	    x 1) Stick
+	    2) Axe
+	    3) Lead pipe
+	    x 4) Plasma sword
+	s) Add five pieces of armor.
+	t) Add five kinds of food.
+	    x 1) Mushrooms
+	u) Autoroller.
+      x	v) Ability to page through lessons.
+	w) Add two new monsters.
+	x) AI path-finding algorithm: go to nearest point to destination within line of sight.
+	y) Scavengers and herbivores.
+	z) Growing plants.
+
+4.8) Improve α astonishingly.
+	a) Mining machine complains and spouts regulations and threats when attacked.
+	b) Speedometer and acceleration.
+	c) Both up and down staircases.
+	d) Top speed attack is critical hit.
+	e) New command - te pego, etc. for critical. n veces to try multiple criticals.  Costs energy.
+      x	f) Intelligent monsters, especially cyborgs, should drop items.
+	g) Distinguish creatures from monsters.
+	h) Add speed / time system.
+	i) Add confusion status.
+	j) Add blindness status.
+      x	k) Fix bugs.
+	   x 1) Interface list is reversed.
+      x l) Keep track of number of commands typed and accuracy for end screen.
+	m) Level guards should have ranged attack to be worthwhile.
+	n) Base ranged combat on DoomRL.
+      x o) Replace sanar with estar bien.
+	p) Identical items should be grouped together in inventory.
+	q) Only way to get past turrets - mobilize shields with "soy duro", which deflects projectiles
+	r) Buff teleport.  May become more worthwhile with projectile attacks.
+	s) 5 uniques.
+	t) Insult system.
+	u) Commands vary independently of one another.
+	v) Seen items and stairs remain on map when out of los.
+	w) Dogs generated around stairs, rather than in a pile.
+	x) Generalize objects and monsters with monster builder and item builder lists.  First step towards evolution.
+      x	y) Equipment screen - necessary for changing between weapons.
+	z) Message for when player walks over something, and routine for picking up stacks of items.
+
+4.9) High priority improvements--to finish α 
+      x	a) Reverse interface list.
+      x b) Finish hunger and thirst status conditions.
+      x	c) Buff rats with poison.
+      x	d) Replace sanar with estar bien.
+      x	e) Ability to page through lessons.
+      x	f) Cyborgs drop batteries.
+	g) Wolves hunt in packs.
+	h) Wolves hit and move.
+      x	i) Stair guards do not move off staircase when player is close.
+      x	j) Add poisoned status condition.
+	k) Fix message passing for uniques.
+	l) Add rat unique, wolf unique, and cyborg unique.
+      x	m) Nerf dog unique - 200hp.
+      x	n) Format lesson screens.
+      x	o) Add death screen.
+      x	   1) Track baddies killed by player.
+      x	   2) Track number of commands entered.
+      x	   3) Track accuracy.
+      x	   4) Track playing time and thus commands per minute.
+	p) Add character information screen.
+	q) Add down staircases.
+	r) Add two Spanish lessons.
+      x s) Change battery tile back to +.
+      x	t) Add trash talk routine.
+      x	u) Update lessons.
+      x	v) Buff fuego attack.
+      x w) Fix lack of unos and unas.
+	x) Justify vocabulary of lesson screens using format t and include english translations of commands in lesson 0.
+      x	y) Term command to change terminal dimensions.
+      x	z) Nerf random item generation.
+
+5. Add monsters.
+     x 1) Rats
+	a) Properties of monsters:
+	    1) Those of protagonist, and
+	    2) AI class
+		x a) amoeba: wanders randomly until touching something, then attacks
+		x b) zombie: wanders randomly until seeing something, then follows in straight line and attacks
+		c) foreman: cuts off ring but just chases
+		d) machida: runs away; uses ranged attack
+	        x e) level guard - patrols randomly until in same room as @, then zombie
+		x f) stair guard - patrols randomly around stair case, blocks staircase when player gets close.
+		g) turret - stationary ranged attack.  Can be hacked.
+		x h) pitbull - attacks, then remains stationary.  Similar to all baddies in other roguelikes.
+                i) wolves - attacks, then moves away. Pack hunters.
+    x 2) Guard dogs 
+    x 3) Wolves
+    4) Androids
+    x 5) Cyborgs 
+	1) All hominids should also be allowed weapons.
+    6) Martians
+    7) Turrets - high damage / to hit, low defense / hp.
+    x 8) Mining / construction robots.  Neutral, add flavor, explain non-permanence of levels.
+
+6. Further improvements.
+  x a) Tunnels always open into buildings on both sides.
+  x b) Tunnels do not overlap rooms.
+  c) Fix problem with line of sight code
+  d) Can't jump over walls
+  x e) Switch to natural cave generation code.
+  f) monsters can't see through walls
+  g) Change ranged to_hit function to depend on dexterity rather than strength.
+  h) Use name rather than type for creature/object names.
+  i) Monster descriptions in lower righthand corner.
+  j) Change title page.
+  k)
+
+6.5. Statistics
+    a) Make stats available at all times with :stats
+    x b) Commands per turn
+    x c) Number of turns
+    d) Pause timer when player doesn't move for 5-10 seconds
+    x e) Average time per command
+    f) Time per word - this could be used for time limit instead of time per command.
+
+7. Add commands to command mode  
+  x a) Make input loop accept : to go into command mode.
+    b) Make it so that escape/enter exits command mode
+    c) Add commands:
+        1) save
+        2) load 
+        3) restart
+        4) abbr
+        5) new (character, window, session)
+        6) stats
+	7) messages
+
+8. "Magic"
+    a) Heat management
+    b) Identity management
+    c) Spacetime management
+    d) Attacking.
+
+9.  Items.
+    a) Weapons
+	1) Railgun - fires through walls
+	2) Coilgun - silent
+	3) Plasma rifle
+	4) sticks, knives, swords, axes, machetes
+	5) Shotgun
+	6) Pistol
+	7) Rifle
+    b) Armor
+    c) Money.
+	1) Based on bitcoin.
+    d) Bionic enhancements
+    e) Food
+    f) Cloaking devices
+    g) Communications devices
+    h) Intelligence devices
+    i) Hacking devices
+    j) Enhanced reactors.
+    
+10) Language interface.
+    x a) Basic conjugation system.
+    x b) Terminal 2, with available "clasulas" in English
+    c) pipelining system
+    d) conjugations command
+    e) help command
+    f) dictionary
+    g) lookup / translate (translates a single word without opening a window)
+
+11) Lingwall assistant.
+    a) Spanish: Cervantes.
+    b) French: Rabelais.
+
+12) Combat system.
+    a) Sabaki
+    b) Kazushi
+    c) Kicking
+    d) Pushing
+
+x 13) Leveling.
+  x a) Give each creature an experience value.
+  x b) Make experience curve logarithmically with level.
+  x c) Make HP and one random attribute increase per level.
+  x d) Add:
+	x 1) beber, comer, fuego, (after adding doors: abrir (there should only be a few doors per level))
+	x 2) un fuego, una fogata 
+	x 3) hacer	
+	x 4) el fuego, la fogata
+	x 5) ir and yo voy
+	x 6) este fuego, esta fogata
+	x 7) nosotros forms.  Easy because all are regular except "vamos", which is well known.
+	x 8) ese fuego, esa fogata
+	x 9) hacer un fuego, una fogata, el fuego, la fogata
+	x 10) unos, unas, los, las, etc.
+	x 11) el, la, usted conjugation.
+	x 12) ellos, ellas conjugation.  
+	x 13) You.
+  x e) Make difficulty of language_mode ability commands depend on level; increased difficulty always implies increased power.
+
+13.5) Grammar.  
+  a) Add more grammar
+	1) tu conjugation; new verbs cenar, desayunar, almorzar, new vocabulary cena, desayuno, almuerzo
+	2) reflexives - irse, recuperarse, dormirse, descansarse
+	3) tener - add synonyms tener miedo, tener rabia, tener hambre, tener sed, tener sueno; new nouns 'comida' 'bebida'
+	4) tener que for casting from HP; querer comer, cenar, desayunar 
+	5) New irregular verb: poder.
+        6) Gustar
+        7) Tactics - berserk: estar enojado.  Coward: soy cobarde.
+	8) Begin Spanglifying messages and interface.
+	9) Remove pronoun requirement (perhaps much after you)
+  b) Note that above list lacks prepositions and connectives; revise
+	1) Quiero comer *porque* tengo hambre
+	2) Tengo hambre *y* quiero comer
+  c) Ser and estar need more emphasis
+	1) Estoy cansado.
+	2) Soy un doctor.
+  d) Orthography.
+
+x 14) Performance enhancement.
+  x a) Do not loop over x-values which are not drawn.
+  x b) Convert map list to an array.  Most of the slowness comes, I think, from is_accessible.
+
+15) Wilderness, towns, multiple dungeons.
+  a) Partially terraformed Martian wilderness will be very interesting landscape
+  b) Ascii fractals?
+
+16) NPCs
+  a) Think monkey island, with gradual shift to L2 conversations.
+  b) Alternatively, don't have NPCs until user's L2 is sufficiently advanced for pure L2 conversations.
+  c) Start with adom model, where speaking to a character results in dialog.  Steal dialog from FSI dialogs.
+  d) Possible questions / responses will amount to multiple choice tests for correctly formed questions / responses.
+
+17) Colorize
+
+18) Traps
+  a) Electric fences-jumpable.
+  b) Land mines
+
+19) Evolve enemies / maps.
+  a) Selection criterion: number of L2 commands typed by player, or number of lookups typed by player, or variety of commands used.
+	1) Variety of commands used must be included--otherwise, algorithm will select for distribution of enemies which can be dispatched by spamming a single cheap command.
+  b) Since maps are randomly generated, they can be similarly evolved.
+
+20) Add reflexive verbs.
+
+21) Add easiest tenses. 
+   1)  Conditional
+   2)  Future
+   3)  Imperfect
+
+22) Incorporate supermemo algorithm.
+
+23) Autoexplore command
+
+24) Village after level 20 or 30
+	a) Base on town in "Teach Yourself French"
+	b) Have multiple quests / missions /jobs available
+	c) Multiple NPCs, all dialog in L2
+
+25) Add notion of danger level.
+
+26) Add time system.
+	a) Idea: use mapcar with update creatures command to increase points until movement threshhold is reached.  Then update creature.
+	    1) Then update_creatures, which is a conditional, will check that each creature has necessary points for any action before performing that action. 
+	    2) Player is special, in that world is redrawn for every player move.  How do we make it so that player moves at different speeds?
+	    3) By using ratios.  All that matters is relative speed.  If player cost for a move is 1000, increase points for every creature by 1000.  Then update creatures. 
+	    4) Creature gets to move if it has sufficient points for the option chosen by the conditional.
+	    5) If not, go to the next creature.  If it does, update the creature, then see if it has enough points to move again (possible for creatures much faster than player).  If not, go to the next creature. 
+
+27) Documentation.
+
+28) Monster descriptions.
+
+29) Ranged combat.	
+	x a) [t]arget and [f]ire keys.
+	x b) [t]arget draws a line to nearest creature in los.  
+		x 1) Pressing t again goes to next nearest creature.  
+		2) Pressing T goes to previous creature.
+		x 3) Spacebar exits targeting routine.
+	x c) [f]ire fires a missile at targeted creature.  If no creature is targetted, [f]ire fires a missile at nearest creature.
+	d) Use pause.lisp to animate projectiles; actually, requires function which is both fine-grained and universal.
+
+30) Pathfinding.
+	a) Requires nothing more than ability to follow lines drawn by line algorithm.
+
+31) Compatability
+	a) Incorporate ncurses.

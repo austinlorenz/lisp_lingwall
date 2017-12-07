@@ -1,0 +1,5 @@
+(defun intro_screen ()  
+    (draw_title)
+    (princ *blank-half-line*)
+    (fresh-line)
+)

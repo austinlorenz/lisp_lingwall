@@ -1,0 +1,63 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 12 (DEFUN VERB_TRANS (X) ...)-1|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|VERB_TRANS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|VERB_TRANS|
+       #77Y(00 00 00 00 01 00 00 00 26 02 AD DA 8E 14 26 AD DC 8E 14 24 AD DE
+            8E 14 22 AD E0 8E 14 20 AD E2 8E 14 1E AD E4 8E 14 1C AD E6 8E 14
+            1A AD E8 8E 14 18 00 19 02 C6 19 02 C8 19 02 CA 19 02 CC 19 02 CE
+            19 02 D0 19 02 D2 19 02 D4 19 02)
+       ("to go" "aller" "to have" "avoir" "to eat" "manger" "to drink" "boire"
+        "to burn" "bruler" "to make" "faire" "to be" "etre" "to use"
+        "utiliser")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP-USER|::|X|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|14 18 (DEFUN ADVERB_TRANS (WORD) ...)-2|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|ADVERB_TRANS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|ADVERB_TRANS|
+       #21Y(00 00 00 00 01 00 00 00 26 02 AD DA 8E 14 03 00 19 02 C6 19 02)
+       ("well" "en bonne sante")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP-USER|::|WORD|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|20 39 (DEFUN ARTICLE_TRANS (WORD) ...)-3|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|ARTICLE_TRANS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|ARTICLE_TRANS|
+       #89Y(00 00 00 00 01 00 00 00 26 02 6B 00 DB 8E 14 26 6B 00 E4 8F 14 14
+            AD E5 8E 14 32 AD E7 8E 14 30 AD E9 8E 14 2E AD EB 8E 14 2C 00 19
+            02 C8 19 02 CA 19 02 CC 19 02 AD DC 8E 14 72 AD DE 8E 14 70 AD E0
+            8E 14 6E AD E2 8F 14 60 CE 19 02 D1 19 02 D3 19 02 D5 19 02 D7 19
+            02)
+       (|COMMON-LISP-USER|::|*GENDER*| "m" "the" "le" "a" "un" "this" "ce"
+        "that" "ce" "f" "the" "la" "a" "une" "this" "cette" "that" "cette")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP-USER|::|WORD|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|41 46 (DEFUN NOUN_TRANS (WORD) ...)-4|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|NOUN_TRANS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|NOUN_TRANS|
+       #29Y(00 00 00 00 01 00 00 00 26 02 AD DA 8E 14 08 AD DC 8E 14 06 00 19
+            02 C6 19 02 C8 19 02)
+       ("fire" "feu" "fireball" "boule de feu")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP-USER|::|WORD|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|48 60 (DEFUN PLURAL (WORD) ...)-5|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|PLURAL| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|PLURAL|
+       #73Y(00 00 00 00 01 00 00 00 26 02 0E 00 1C 15 9E 19 02 C7 19 02 C9 19
+            02 CB 19 02 CD 19 02 CF 19 02 D1 19 02 DB AE 8E 14 69 DD AE 8E 14
+            67 DF AE 8E 14 65 E1 AE 8E 14 63 E3 AE 8E 14 61 E5 AE 8E 14 5F E7
+            AE E8 33 02 26 19 02)
+       (|COMMON-LISP-USER|::|*PLURAL*| "un" "des" "une" "des" "ce" "ces"
+        "cette" "ces" "feu" "feux" "boule de feu" "boules de feu"
+        |COMMON-LISP|::|STRING| "s")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP-USER|::|WORD|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))

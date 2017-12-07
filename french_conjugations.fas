@@ -1,0 +1,107 @@
+(|SYSTEM|::|VERSION| '(20080430.))
+#0Y_ #0Y |CHARSET|::|UTF-8|
+#Y(#:|1 9 (DEFUN TRANS (X) ...)-1|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|TRANS| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|TRANS|
+       #61Y(00 00 00 00 01 00 00 00 26 02 AD DA 8E 14 1C AD DC 8E 14 1A AD DE
+            8E 14 18 AD E0 8E 14 16 AD E2 8E 14 14 AD E4 8E 14 12 00 19 02 C6
+            19 02 C8 19 02 CA 19 02 CC 19 02 CE 19 02 D0 19 02)
+       ("to go" "aller" "to make" "faire" "to have" "avoir" "to eat" "manger"
+        "to drink" "boire" "to burn" "incendier")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|)
+       (|COMMON-LISP-USER|::|X|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|11 20 (DEFUN CONJ (X) ...)-2|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|CONJ| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|CONJ|
+       #84Y(00 00 00 00 01 00 00 00 26 02 AD DA 8E 14 22 AD DC 8E 14 21 AD DE
+            8E 14 20 AD E0 8E 14 1F AD E2 8E 14 1E AD 72 63 E4 E5 72 60 E6 8E
+            14 17 00 19 02 2E 01 19 02 2E 03 19 02 2E 05 19 02 2E 07 19 02 2E
+            09 19 02 AD E4 E7 B0 72 62 73 02 37 72 60 2F 0E 19 02)
+       ("aller" |COMMON-LISP-USER|::|ALLER-CONJ| "manger"
+        |COMMON-LISP-USER|::|MANGER-CONJ| "boire"
+        |COMMON-LISP-USER|::|BOIRE-CONJ| "faire"
+        |COMMON-LISP-USER|::|FAIRE-CONJ| "etre" |COMMON-LISP-USER|::|ETRE-CONJ|
+        0. 2. "re" -2. |COMMON-LISP-USER|::|REG-ER-CONJ|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP-USER|::|X|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|22 30 (DEFUN REG-ER-CONJ (STEM) ...)-3|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|REG-ER-CONJ| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|REG-ER-CONJ|
+       #95Y(00 00 00 00 01 00 00 00 26 02 6B 00 DB 8E 14 33 6B 00 DE 8E 14 32
+            6B 00 DF 8E 14 2C 6B 00 E1 8E 14 2B 6B 00 E3 8E 14 2A 6B 00 E5 8E
+            14 29 6B 00 E7 8E 14 06 6B 00 E8 8F 14 22 DC AE D4 14 33 02 26 19
+            02 DC AE C8 1B 75 DC AE CB 1B 70 DC AE CD 1B 6B DC AE CF 1B 66 DC
+            AE D1 1B 61 00 19 02)
+       (|COMMON-LISP-USER|::|*L2-PRONOUN*| "je" |COMMON-LISP|::|STRING| "e"
+        "elle" "il" "e" "vous" "ez" "tu" "es" "nous" "ons" "ils" "elles" "ent")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|)
+       (|COMMON-LISP-USER|::|STEM|) |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|32 36 (DEFUN MANGER-CONJ NIL ...)-4|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|MANGER-CONJ| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|MANGER-CONJ|
+       #24Y(00 00 00 00 00 00 00 00 26 01 6B 00 DB 8E 14 05 DD 2F 04 19 01 C7
+            19 01)
+       (|COMMON-LISP-USER|::|*L2-PRONOUN*| "nous" "mangeons" "mang"
+        |COMMON-LISP-USER|::|REG-ER-CONJ|)
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|38 47 (DEFUN ALLER-CONJ NIL ...)-5|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|ALLER-CONJ| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|ALLER-CONJ|
+       #79Y(00 00 00 00 00 00 00 00 26 01 6B 00 DB 8E 14 2D 6B 00 DD 8E 14 2A
+            6B 00 DE 8E 14 24 6B 00 E0 8E 14 21 6B 00 E2 8E 14 1E 6B 00 E4 8E
+            14 1B 6B 00 E6 8E 14 18 6B 00 E7 8E 14 12 00 19 01 C7 19 01 CA 19
+            01 CC 19 01 CE 19 01 D0 19 01 D3 19 01)
+       (|COMMON-LISP-USER|::|*L2-PRONOUN*| "je" "vais" "elle" "il" "va" "vous"
+        "allez" "tu" "vas" "nous" "allons" "ils" "elles" "vont")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|50 58 (DEFUN BOIRE-CONJ NIL ...)-6|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|BOIRE-CONJ| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|BOIRE-CONJ|
+       #79Y(00 00 00 00 00 00 00 00 26 01 6B 00 DB 8E 14 2D 6B 00 DD 8E 14 2A
+            6B 00 DE 8E 14 24 6B 00 E0 8E 14 21 6B 00 E2 8E 14 1E 6B 00 E4 8E
+            14 1B 6B 00 E6 8E 14 18 6B 00 E7 8E 14 12 00 19 01 C7 19 01 CA 19
+            01 CC 19 01 CE 19 01 D0 19 01 D3 19 01)
+       (|COMMON-LISP-USER|::|*L2-PRONOUN*| "je" "bois" "elle" "il" "boit"
+        "vous" "buvez" "tu" "bois" "nous" "buvons" "ils" "elles" "boivent")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|60 68 (DEFUN FAIRE-CONJ NIL ...)-7|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|FAIRE-CONJ| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|FAIRE-CONJ|
+       #79Y(00 00 00 00 00 00 00 00 26 01 6B 00 DB 8E 14 2D 6B 00 DD 8E 14 2A
+            6B 00 DE 8E 14 24 6B 00 E0 8E 14 21 6B 00 E2 8E 14 1E 6B 00 E4 8E
+            14 1B 6B 00 E6 8E 14 18 6B 00 E7 8E 14 12 00 19 01 C7 19 01 CA 19
+            01 CC 19 01 CE 19 01 D0 19 01 D3 19 01)
+       (|COMMON-LISP-USER|::|*L2-PRONOUN*| "je" "fais" "elle" "il" "fait"
+        "vous" "faites" "tu" "fais" "nous" "faisons" "ils" "elles" "font")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
+#Y(#:|70 78 (DEFUN ETRE-CONJ NIL ...)-8|
+   #20Y(00 00 00 00 00 00 00 00 20 01 DA 2F 01 DA DC 32 9C C5 19 01)
+   (|COMMON-LISP-USER|::|ETRE-CONJ| |SYSTEM|::|REMOVE-OLD-DEFINITIONS|
+    #Y(|COMMON-LISP-USER|::|ETRE-CONJ|
+       #79Y(00 00 00 00 00 00 00 00 26 01 6B 00 DB 8E 14 2D 6B 00 DD 8E 14 2A
+            6B 00 DE 8E 14 24 6B 00 E0 8E 14 21 6B 00 E2 8E 14 1E 6B 00 E4 8E
+            14 1B 6B 00 E6 8E 14 18 6B 00 E7 8E 14 12 00 19 01 C7 19 01 CA 19
+            01 CC 19 01 CE 19 01 D0 19 01 D3 19 01)
+       (|COMMON-LISP-USER|::|*L2-PRONOUN*| "je" "suis" "elle" "il" "est" "vous"
+        "etes" "tu" "es" "nous" "sommes" "ils" "elles" "sont")
+       (|COMMON-LISP|::|T| |COMMON-LISP|::|NIL| |COMMON-LISP|::|NIL|) ()
+       |COMMON-LISP|::|NIL| 1))
+   (|COMMON-LISP|::|T| |COMMON-LISP|::|T| |COMMON-LISP|::|T|))
